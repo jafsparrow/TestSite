@@ -1,0 +1,87 @@
+<!DOCTYPE= html>
+<html>
+	<header>
+	
+	<title>Testing Text and Buttons</title>
+	<link rel="stylesheet" href="pagedecor.css">
+	   <script type="text/javascript">
+            
+
+            
+		  function displayResult() {
+				document.getElementById("resultAreaID").style.display = 'block';
+				
+				for(var i=1; i<5; i++){
+					var SourceID = "formText" + i;
+					
+					var textCopy = document.getElementById(SourceID).value;
+					document.getElementById(SourceID).value ="";
+					var targetID = "resultText" + i;
+					document.getElementById(targetID).innerHTML = textCopy;
+					
+				}
+
+            }
+			
+        </script>
+
+
+        </script>
+	
+	</header>
+	
+	<body>
+		<div class="header1">
+			<h2>Text Boxes and Buttons</h2>
+	</div>
+	
+		<h2 id="testHead">Here goes</h2>
+		<div class="formArea">
+			<form>
+				<table>
+					<tr>
+						<td><label>User Name :</label></td>
+						<td><input type="text" id="formText1"></input></td>
+					</tr>
+					<tr>
+						<td><label>Password:</label></td>
+						<td><input type="text" id="formText2"></input></td>
+					</tr>
+					<tr>
+						<td><label>First Name :</label></td>
+						<td><input type="text" id="formText3"></input></td>
+					</tr>
+					<tr>
+						<td><label>Second Name :</label></td>
+						<td><input type="text" id="formText4"></input></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="Button" id="showButton" value="Show Data" onclick="displayResult()"></input></td>
+					</tr>
+				</table>
+			</form>
+		
+		</div>
+		<!-----<button id="fullScreen" onclick="launchFullScreen(document.documentElement)">click Me to launch full screen</button> ---->
+		
+		<div id="resultAreaID" class="resultArea">
+			<table>
+				<tr>
+					<p id="resultText1">&nbsp;<p> 
+				</tr>
+				<tr>
+					<p id="resultText2">&nbsp;<p>
+				</tr>
+				<tr>
+					<p id="resultText3">&nbsp;<p>
+				</tr>
+				<tr>
+					<p id="resultText4">&nbsp; test<p>
+				</tr>
+			</table>
+			
+		</div>
+	</body>
+</html>
+
