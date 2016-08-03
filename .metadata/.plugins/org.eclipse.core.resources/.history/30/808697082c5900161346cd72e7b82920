@@ -39,16 +39,17 @@ public class TextButton {
 		enabledButton = driver.findElement(By.id("enabledButton"));
 		disabledButton = driver.findElement(By.id("disabledButton"));
 		
-		
-		
 		//checking the result texts are displayed using .isDisplayed() method.
 		if(!driver.findElement(By.id("resultText1")).isDisplayed()){
 			System.out.println("result texts are not displayed.");
 		}
 		
-				
+		
+		
+		
 		
 		//test case will proceed based on two condition - display mode of the buttons.
+		
 		if(enabledButton.isEnabled() && !disabledButton.isEnabled()){
 			
 				userName.sendKeys("TestUser1");
@@ -78,6 +79,10 @@ public class TextButton {
 		//close and say bye bye to driver.
 		driver.close();
 		driver.quit();
+		
+		
+		
+
 	}
 
 }
