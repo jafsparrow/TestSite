@@ -1,0 +1,33 @@
+package com.selenium.basics;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TextButton {
+
+	
+	public static void main(String[] args) {
+		
+
+		WebElement userName;
+		WebElement password;
+		WebElement firstName;
+		WebElement lastName;
+		
+		WebDriver driver = new FirefoxDriver();
+		driver.get("localhot/TestSite/index.html");
+		driver.manage().window().maximize();
+		
+		userName = driver.findElement(By.id("formText1"));
+		password = driver.findElement(By.id("formText1"));
+		firstName = driver.findElement(By.id("formText1"));
+		lastName = driver.findElement(By.id("formText1"));
+		
+		
+		
+		
+
+	}
+
+}

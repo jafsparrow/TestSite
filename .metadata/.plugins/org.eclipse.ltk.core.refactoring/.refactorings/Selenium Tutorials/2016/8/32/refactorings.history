@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;come.selenium.basics&apos; to &apos;com.selenium.basics&apos;&#x0D;&#x0A;- Original project: &apos;Selenium Tutorials&apos;&#x0D;&#x0A;- Original element: &apos;Selenium Tutorials/src/come.selenium.basics&apos;&#x0D;&#x0A;- Renamed element: &apos;Selenium Tutorials/src/com.selenium.basics&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;come.selenium.basics&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;come.selenium.basics" name="com.selenium.basics" qualified="false" references="true" stamp="1470189487433" textual="false" version="1.0"/>
+</session>
